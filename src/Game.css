@@ -1,7 +1,42 @@
 .game-container {
     background-color: yellow;
     width: 50%;
-    height: 80vh;
+    height: 60vh;
     margin: 0 auto;
     color: black;
+}
+
+.game-header {
+    border: 1px solid red;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.character-image{ 
+    margin-top: 2rem;
+    margin-left: 50%;
+    border-radius: 5px;
+}
+
+.info-box {
+    border: 1px solid black;
+    width: 40%;
+    height: 35vh;
+    margin-top: -18rem;
+    text-align: left;
+    padding-left: 2rem;
+    margin-left: 2rem;
+}
+
+
+.choice-box{
+    margin-top: 2rem;
+    border: 1px solid blue;
+
+}
+
+.button {
+    margin: 0 1rem;
 }

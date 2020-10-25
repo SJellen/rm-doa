@@ -8,10 +8,24 @@ function ContextProvider({children}) {
 
     const [rickImage, setRickImage] = useState()
     const [mortyImage, setMortyImage] = useState()
+    const [currentCharacter, setCurrentCharacter] = useState([])
+    const [highScore, setHighScore] = useState(0)
 
 
 
 
+
+    let randomId = Math.floor(Math.random() * 671)
+
+    const fetchCharacter = async () => {
+        await fetch(`https://rickandmortyapi.com/api/character/${randomId}`)
+       .then(res => res.json())
+       .then(data => 
+        setCurrentCharacter(data)
+        
+       )
+       .catch(error => console.log(error))
+   }
 
 
 
@@ -39,12 +53,13 @@ function ContextProvider({children}) {
    useEffect(() => {
     fetchRick()
     fetchMorty()
+    fetchCharacter()
    },[])
 
    console.log(rickImage)
 
     return (
-        <Context.Provider value={{rickImage, mortyImage}}>
+        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore}}>
             {children}
         </Context.Provider>
     )
