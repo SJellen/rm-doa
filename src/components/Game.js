@@ -4,9 +4,9 @@ import {Context} from './Context'
 
 function Game() {
 
-    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver} = useContext(Context)
+    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore} = useContext(Context)
     const [lives, setLives] = useState(5)
-    const [score, setScore] = useState(0)
+    
     console.log(currentCharacter)
 
     function handleDead() {
