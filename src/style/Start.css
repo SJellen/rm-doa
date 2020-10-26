@@ -1,0 +1,51 @@
+.start-container {
+    width: 40%;
+    height: 40vh;
+    /* background-color: red; */
+    margin: 5rem auto;
+    color: black;
+}
+
+.wordballoon {
+    position: relative;
+    z-index: 3;
+    width: 15rem;
+    height: 5rem;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: -20rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem 1rem 0rem 1.5rem;
+    letter-spacing: 3px;
+    line-height: 1.25;
+}
+
+.start-image {
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 1rem;
+}
+
+.button-box {
+    position: relative;
+    top: 2rem;
+    right: 10rem;
+}
+
+button {
+    width: 100px;
+    padding: .5rem 0;
+    border: none;
+    background-color: limegreen;
+    border-radius: 5px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+

@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
-import './App.css';
+import '../style/App.css';
 import Game from './Game'
 import Header from './Header'
 import {Context} from './Context'
+import Start from './Start'
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
     <Header />
     <Game />
+    <Start />
     </div>
   );
 }

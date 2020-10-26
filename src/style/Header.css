@@ -4,10 +4,18 @@
     flex-direction: row;
     justify-content: space-between;
     font-family: rickMorty;
+    color: limegreen;
+    text-shadow: 1px 1px 1px white;
 }
 
 .header-image {
     border-radius: 100%;
     width: 100px;
     margin: 1rem;
+}
+
+.title {
+   
+    padding-top: 2rem;
+    
 }

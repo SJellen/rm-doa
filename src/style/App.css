@@ -4,7 +4,7 @@ body {
 
 @font-face {
   font-family: rickMorty;
-  src: url(get_schwifty.ttf)
+  src: url(../get_schwifty.ttf)
 }
 
 .App {
