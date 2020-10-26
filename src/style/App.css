@@ -1,5 +1,8 @@
 body {
   background-color: black;
+  background-image: url(../stars.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @font-face {

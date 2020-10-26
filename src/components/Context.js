@@ -12,6 +12,7 @@ function ContextProvider({children}) {
     const [currentCharacter, setCurrentCharacter] = useState([])
     const [highScore, setHighScore] = useState(0)
     const [isGameOn, setIsGameOn] = useState(false)
+    const [isGameOver, setGameOver] = useState(false)
 
 
 
@@ -72,7 +73,7 @@ const fetchPoopy = async () => {
    console.log(rickImage)
 
     return (
-        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage}}>
+        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver}}>
             {children}
         </Context.Provider>
     )

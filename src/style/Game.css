@@ -1,13 +1,15 @@
 .game-container {
-    background-color: yellow;
+    background-color: rgba(61, 62, 68, .95);
+    border-radius: 25px;
     width: 50%;
     height: 60vh;
     margin: 2rem auto;
-    color: black;
+    color: whitesmoke;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
 .game-header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -15,35 +17,37 @@
 }
 
 .character-image{ 
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 50%;
     border-radius: 5px;
+    width: 250px;
+    height: auto;
 }
 
 .high-score {
-    border: 1px solid red;
-    padding-top: 1rem;
+    /* border: 1px solid red; */
+    padding-top: 2rem;
     width: 10rem;
 }
 
 .lives-box {
-    border: 1px solid red;
-    padding-top: 1rem;
+    /* border: 1px solid red; */
+    padding-top: 2rem;
     width: 10rem;
 }
 
 .scoreboard {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 10rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
     
 }
 
 .info-box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40%;
     height: 35vh;
-    margin-top: -18rem;
+    margin-top: -16rem;
     text-align: left;
     padding-left: 2rem;
     margin-left: 2rem;
@@ -51,11 +55,11 @@
 
 
 .choice-box{
-    margin-top: 2rem;
-    border: 1px solid blue;
+    margin-top: 1rem;
+    /* border: 1px solid blue; */
 
 }
 
 .button {
-    margin: 0 1rem;
+    margin: -.5rem 1rem;
 }
