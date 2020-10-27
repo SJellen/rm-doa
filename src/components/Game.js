@@ -4,18 +4,20 @@ import {Context} from './Context'
 
 function Game() {
 
-    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore} = useContext(Context)
-    const [lives, setLives] = useState(5)
+    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore, lives, setLives, setRight, right, setWrong, wrong} = useContext(Context)
     
-    console.log(currentCharacter)
+    
+    
 
     function handleDead() {
         if (currentCharacter.status === "Dead") {
             setScore(prevState => prevState + 1)
+            setRight(prevState => prevState + 1)
             fetchCharacter()
             console.log("dead")
         } else {
             setLives(prevState => prevState -1)
+            setWrong(prevState => prevState + 1)
             if (lives <= 0) {
                 setGameOver(true)
             }
@@ -26,10 +28,12 @@ function Game() {
     function handleAlive() {
         if (currentCharacter.status === "Alive") {
             setScore(prevState => prevState + 1)
+            setRight(prevState => prevState + 1)
             fetchCharacter()
             console.log("alive")
         } else {
             setLives(prevState => prevState -1)
+            setWrong(prevState => prevState + 1)
             if (lives <= 0) {
                 setGameOver(true)
             }
@@ -40,10 +44,12 @@ function Game() {
     function handleUnknown() {
         if (currentCharacter.status === "unknown") {
             setScore(prevState => prevState + 1)
+            setRight(prevState => prevState + 1)
             fetchCharacter()
             console.log("unknown")
         } else {
             setLives(prevState => prevState -1)
+            setWrong(prevState => prevState + 1)
             if (lives <= 0) {
                 setGameOver(true)
             }
@@ -57,8 +63,9 @@ function Game() {
         { isGameOn && !isGameOver ?
         <div className="game-container">
         <div className="game-header">
-        <span className="high-score">High Score: {highScore}</span>
-            <span className="scoreboard">Score: {score}</span>
+        
+            <span className="right">Right: {right}</span>
+            <span className="wrong">Wrong: {wrong}</span>
             <span className="lives-box">Lives: {lives}</span>    
         </div>
 
@@ -82,7 +89,10 @@ function Game() {
 
         </div>
 
-
+        <div className="game-footer">
+        <span className="high-score">High Schmeckles: {highScore}</span>
+            <span className="scoreboard">Schmeckles: {score}</span>
+        </div>
             
         </div> : ""
         }

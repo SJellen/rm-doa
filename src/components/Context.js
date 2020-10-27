@@ -14,6 +14,13 @@ function ContextProvider({children}) {
     const [isGameOn, setIsGameOn] = useState(false)
     const [isGameOver, setGameOver] = useState(false)
     const [score, setScore] = useState(0)
+    const [isGameRestart, setIsGameRestart] = useState(false)
+    const [isStartPage, setIsStartPage] = useState(true)
+    const [lives, setLives] = useState(5)
+    const [right, setRight] = useState(0)
+    const [wrong, setWrong] = useState(0)
+
+
 
 
 
@@ -70,10 +77,10 @@ const fetchPoopy = async () => {
     fetchPoopy()
    },[])
 
-   console.log(rickImage)
+   
 
     return (
-        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver, score, setScore}}>
+        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver, score, setScore, setIsGameRestart, isGameRestart, isStartPage, setIsStartPage, lives, setLives, right, setRight, wrong, setWrong}}>
             {children}
         </Context.Provider>
     )

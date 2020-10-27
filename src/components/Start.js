@@ -4,17 +4,18 @@ import {Context} from './Context'
 
 function Start() {
 
-    const {poopyImage, isGameOn, setIsGameOn} = useContext(Context)
+    const {poopyImage, isGameOn, setIsGameOn, isStartPage, setIsStartPage} = useContext(Context)
 
     function handleClick() {
         setIsGameOn(true)
+        setIsStartPage(false)
     }
     
 
 
     return (
         <div>
-        { !isGameOn ?
+        { isStartPage ?
         <div className="start-container">
         <img src={poopyImage} alt="mr poopybutthole" className="start-image" />
 

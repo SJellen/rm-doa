@@ -4,7 +4,19 @@ import {Context} from './Context'
 
 function End() {
 
-    const {isGameOver, score} = useContext(Context)
+    const {isGameOver, score, isGameOn, setIsGameOn,setGameOver, setScore, setLives} = useContext(Context)
+
+    function handleEndClick() {
+
+        setScore(0)
+        setLives(5)
+        setGameOver(false)
+        // setIsGameOn(true)
+        
+        
+       
+
+    }
 
     
     
@@ -15,6 +27,9 @@ function End() {
         { isGameOver ?
         <div className="end-container">
         <h1>Final score: {score}</h1>
+
+
+        <div><button onClick={handleEndClick}>Replay</button></div>
         
         </div> : ""
         }
