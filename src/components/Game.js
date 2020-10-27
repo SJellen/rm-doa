@@ -11,7 +11,7 @@ function Game() {
 
     function handleDead() {
         if (currentCharacter.status === "Dead") {
-            setScore(prevState => prevState + 1)
+            setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
             fetchCharacter()
             console.log("dead")
@@ -20,6 +20,8 @@ function Game() {
             setWrong(prevState => prevState + 1)
             if (lives <= 0) {
                 setGameOver(true)
+                setWrong(0)
+                setRight(0)
             }
             fetchCharacter()
         }
@@ -27,7 +29,7 @@ function Game() {
 
     function handleAlive() {
         if (currentCharacter.status === "Alive") {
-            setScore(prevState => prevState + 1)
+            setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
             fetchCharacter()
             console.log("alive")
@@ -36,6 +38,8 @@ function Game() {
             setWrong(prevState => prevState + 1)
             if (lives <= 0) {
                 setGameOver(true)
+                setWrong(0)
+                setRight(0)
             }
             fetchCharacter()
         }
@@ -43,7 +47,7 @@ function Game() {
 
     function handleUnknown() {
         if (currentCharacter.status === "unknown") {
-            setScore(prevState => prevState + 1)
+            setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
             fetchCharacter()
             console.log("unknown")
@@ -52,6 +56,8 @@ function Game() {
             setWrong(prevState => prevState + 1)
             if (lives <= 0) {
                 setGameOver(true)
+                setWrong(0)
+                setRight(0)
             }
             fetchCharacter()
         }
