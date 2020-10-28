@@ -4,12 +4,19 @@ import {Context} from './Context'
 
 function End() {
 
-    const {isGameOver, score, isGameOn, setIsGameOn,setGameOver, setScore, setLives, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage} = useContext(Context)
+    const {isGameOver, score, isGameOn, setIsGameOn,setGameOver, setScore, setLives, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, scoreArr, setScoreArr, setHighScore, highScore, handleStreaks, longestStreak} = useContext(Context)
+
+
+    
+
+    
 
     function handleEndClick() {
+        
         setScore(0)
         setLives(5)
         setGameOver(false)
+        setScoreArr([])
         // setIsGameOn(true)
     }
 
@@ -65,6 +72,8 @@ function End() {
 
         {endText}
         <h1 className="final-score">Final Schmeckles: {score}</h1>
+
+        <h1 className="longest-streak">Longest streak: {longestStreak}</h1>
 
 
         <div className="end-button-box"><button onClick={handleEndClick}>Replay</button></div>

@@ -4,18 +4,25 @@ import {Context} from './Context'
 
 function Game() {
 
-    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore, lives, setLives, setRight, right, setWrong, wrong} = useContext(Context)
+    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore, lives, setLives, setRight, right, setWrong, wrong, setHighScore, scoreArr, setScoreArr, handleStreaks} = useContext(Context)
     
     const {location, origin, image, name, species, type, gender } = currentCharacter
-    
+    if (currentCharacter.status === "unknown") {
+        fetchCharacter()
+    }
+
+
+   handleStreaks()
+    //  console.log(currentCharacter.status)
 
     function handleDead() {
         if (currentCharacter.status === "Dead") {
+            setScoreArr([...scoreArr, "r"])
             setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
             fetchCharacter()
-            console.log("dead")
         } else {
+            setScoreArr([...scoreArr, "w"])
             setLives(prevState => prevState -1)
             setWrong(prevState => prevState + 1)
             if (lives <= 0) {
@@ -29,11 +36,12 @@ function Game() {
 
     function handleAlive() {
         if (currentCharacter.status === "Alive") {
+            setScoreArr([...scoreArr, "r"])
             setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
             fetchCharacter()
-            console.log("alive")
         } else {
+            setScoreArr([...scoreArr, "w"])
             setLives(prevState => prevState -1)
             setWrong(prevState => prevState + 1)
             if (lives <= 0) {
@@ -45,23 +53,7 @@ function Game() {
         }
     }
 
-    function handleUnknown() {
-        if (currentCharacter.status === "unknown") {
-            setScore(prevState => prevState + 100)
-            setRight(prevState => prevState + 1)
-            fetchCharacter()
-            console.log("unknown")
-        } else {
-            setLives(prevState => prevState -1)
-            setWrong(prevState => prevState + 1)
-            if (lives <= 0) {
-                setGameOver(true)
-                setWrong(0)
-                setRight(0)
-            }
-            fetchCharacter()
-        }
-    }
+   
 
 
     return (
@@ -91,7 +83,7 @@ function Game() {
         <div className="choice-box">
         <button className="button" onClick={handleDead}>Dead</button>
         <button className="button" onClick={handleAlive}>Alive</button>
-        <button className="button" onClick={handleUnknown}>Unknown</button>
+       
 
         </div>
 
