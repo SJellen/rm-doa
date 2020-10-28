@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import '../style/Start.css'
 import {Context} from './Context'
 
 function Start() {
 
-    const {poopyImage, isGameOn, setIsGameOn, isStartPage, setIsStartPage} = useContext(Context)
+    const {poopyImage, setIsGameOn, isStartPage, setIsStartPage} = useContext(Context)
 
     function handleClick() {
         setIsGameOn(true)

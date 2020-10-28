@@ -1,22 +1,24 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import '../style/Game.css'
 import {Context} from './Context'
 
 function Game() {
 
-    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore, lives, setLives, setRight, right, setWrong, wrong, setHighScore, scoreArr, setScoreArr, handleStreaks} = useContext(Context)
+    const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore, lives, setLives, setRight, right, setWrong, wrong, scoreArr, setScoreArr, handleStreaks} = useContext(Context)
     
     const {location, origin, image, name, species, type, gender } = currentCharacter
+
     if (currentCharacter.status === "unknown") {
         fetchCharacter()
     }
 
 
-   handleStreaks()
+//    handleStreaks()
     //  console.log(currentCharacter.status)
 
     function handleDead() {
         if (currentCharacter.status === "Dead") {
+            handleStreaks()
             setScoreArr([...scoreArr, "r"])
             setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)

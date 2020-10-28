@@ -21,6 +21,9 @@ function ContextProvider({children}) {
     const [pickleImage, setPickleImage] = useState()
 
 
+   
+
+
     const [currentCharacter, setCurrentCharacter] = useState([])
     const [highScore, setHighScore] = useState(storageScores ? storageScores : 0)
     const [isGameOn, setIsGameOn] = useState(false)
@@ -119,8 +122,10 @@ function ContextProvider({children}) {
         )
         .catch(error => console.log(error))
         }
-    
 
+
+        
+    
 
 
 
@@ -140,7 +145,8 @@ function ContextProvider({children}) {
     
     
     
-   },[highScore])
+     // eslint-disable-next-line react-hooks/exhaustive-deps
+   },[highScore, longestStreak])
 
 
 
@@ -168,8 +174,10 @@ function ContextProvider({children}) {
 
     setLongestStreak(highStreak)
     }
-    
 
+    
+    
+    
     
 
     console.log(scoreArr,longestStreak)

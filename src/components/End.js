@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import '../style/End.css'
 import {Context} from './Context'
 
 function End() {
 
-    const {isGameOver, score, isGameOn, setIsGameOn,setGameOver, setScore, setLives, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, scoreArr, setScoreArr, setHighScore, highScore, handleStreaks, longestStreak} = useContext(Context)
+    const {isGameOver, score,setGameOver, setScore, setLives, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, setScoreArr,longestStreak} = useContext(Context)
 
 
     
