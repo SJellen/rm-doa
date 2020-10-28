@@ -6,7 +6,7 @@ function Game() {
 
     const {currentCharacter, highScore, isGameOn, fetchCharacter, setGameOver, isGameOver, score, setScore, lives, setLives, setRight, right, setWrong, wrong} = useContext(Context)
     
-    
+    const {location, origin, image, name, species, type, gender } = currentCharacter
     
 
     function handleDead() {
@@ -75,16 +75,16 @@ function Game() {
             <span className="lives-box">Lives: {lives}</span>    
         </div>
 
-        <img src={currentCharacter.image} alt="character pic" className="character-image"/>
+        <img src={image} alt="character pic" className="character-image"/>
         <div className="info-box">
-        <h2>{currentCharacter.name}</h2>
-        <h3>Specie: {currentCharacter.species}</h3>
-        {currentCharacter.type ? <h3>Type: {currentCharacter.type}</h3> : ''}
+        <h2>{name}</h2>
+        <h3><span className="span-tag">Specie:</span><br></br> {species}</h3>
+        {type ? <h3><span className="span-tag">Type:</span><br></br> {type}</h3> : ''}
         
-        <h3>Gender: {currentCharacter.gender}</h3>
+        <h3><span className="span-tag">Gender:</span><br></br> {gender}</h3>
         
-       {/* {currentCharacter.location.name ? <h3>{currentCharacter.location.name}</h3> : ''}
-       {currentCharacter.origin.location ? <h3>{currentCharacter.origin.location}</h3> : ''} */}
+       {location.name ? <h3><span className="span-tag">Home location:</span><br></br> {location.name}</h3> : ''}
+       {origin.location ? <h3><span className="span-tag">Last know location:</span><br></br> {origin.location}</h3> : ''}
         </div>
        
 

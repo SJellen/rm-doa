@@ -5,7 +5,7 @@
     justify-content: space-between;
     font-family: rickMorty;
     color: #05C1D8;
-    text-shadow: 1.5px 1.5px 2.5px #72D467;
+    text-shadow: 1.5px 1.5px 2.5px black;
     
 }
 
@@ -13,7 +13,7 @@
     border-radius: 100%;
     width: 100px;
     margin: 1rem 2rem;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 1.5px 1.5px .5px 1px rgba(0, 0, 0, .15);
 }
 
 .title {

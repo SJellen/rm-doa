@@ -4,7 +4,7 @@ import {Context} from './Context'
 
 function End() {
 
-    const {isGameOver, score, isGameOn, setIsGameOn,setGameOver, setScore, setLives, jerryImage, meeseeksImage} = useContext(Context)
+    const {isGameOver, score, isGameOn, setIsGameOn,setGameOver, setScore, setLives, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage} = useContext(Context)
 
     function handleEndClick() {
         setScore(0)
@@ -15,24 +15,55 @@ function End() {
 
     const jerryCard = <div>
                         <img src={jerryImage} className="end-card-image" alt="end card"/>
-                        <span className="end-card-text">Hey, you did the best you could. Wanna Smore?</span>
+                        <div className="text-box">
+                           <span className="end-card-text">Hey buddy, you did the best you could. Wanna Smore?</span> 
+                        </div>
+                        
                         </div>
 
     const meeseeksCard = <div>
                         <img src={meeseeksImage} className="end-card-image" alt="end card"/>
-                        <span className="end-card-text">You gotta relax.</span>
-                        </div>                
+                        <div className="text-box">
+                           <span className="end-card-text">You gotta relax.</span> 
+                        </div>
+                        
+                        </div>  
+                        
+    const summerCard = <div>
+                        <img src={summerImage} className="end-card-image" alt="end card"/>
+                        <div className="text-box">
+                            <span className="end-card-text">We're all reeeaal impressed.</span>
+                        </div>
+                        
+                        </div>                     
 
-    
-    
+    const bethCard = <div>
+                        <img src={bethImage} className="end-card-image" alt="end card"/>
+                        <div className="text-box">
+                          <span className="end-card-text">I'm sorry you feel you deserve an apology.</span>  
+                        </div>
+                        
+                        </div>    
 
+    const pickleCard = <div>
+                    <img src={pickleImage} className="end-card-image" alt="end card"/>
+                    <div className="text-box">
+                    <span className="end-card-text">The reason anyone would do this is, if they could, which they can't, would be because they could, which they can't.</span>  
+                    </div>
+
+                    </div>                       
+
+
+
+    const endText = score < 500 ? 
+    jerryCard : score >= 500 && score < 1000 ? meeseeksCard : score >= 1000 && score < 2000 ? summerCard : score >= 2000 && score < 3000 ? bethCard : pickleCard
 
     return (
         <div>
         { isGameOver ?
         <div className="end-container">
 
-        {score < 500 ? jerryCard : score >= 500 && score < 1000 ? meeseeksCard : ''}
+        {endText}
         <h1 className="final-score">Final Schmeckles: {score}</h1>
 
 

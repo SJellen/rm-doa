@@ -1,40 +1,48 @@
 .end-container {
     background-color: rgba(61, 62, 68, .95);
-    border-radius: 25px;
+    border-radius: 5px;
     width: 50%;
-    height: 40vh;
+    height: auto;
     margin: 4rem auto;
     color: whitesmoke;
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 1.5px 1.5px .5px 1.5px rgba(0, 0, 0, .15);
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .end-card-image{
+
     width: 150px;
     height: auto;
-    margin-right: 5rem;
-    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
     border-radius: 50%;
+    display: flex;
+    justify-content: left;
 }
 
-.end-card-text {
-    position: relative;
+.text-box {
+    display: flex;
+    justify-content: right;
     /* border: 1px solid green; */
+    text-align: left;
     font-size: 1.25rem;
-    margin-left: -2rem;
-    top: -5rem;
+    margin-left: 18rem;
+    margin-top: -7.5rem;
+    max-width: 50%;
     
     
 }
 
 .end-button-box {
-    margin: 2rem auto;
+    margin: 2rem auto -1rem auto;
     /* border: 1px solid blue; */
     
 }
 
 .final-score {
-    margin-top: 4rem;
+    margin-top: 8rem; 
     /* border: 1px solid green; */
     
 }
