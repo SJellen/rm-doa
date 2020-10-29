@@ -42,7 +42,11 @@
 }
 
 .final-score {
-    margin-top: 8rem; 
+    margin-top: .5rem; 
     /* border: 1px solid green; */
     
+}
+
+.longest-streak {
+    margin-top: 8rem; 
 }

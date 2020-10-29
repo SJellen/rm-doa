@@ -7,10 +7,6 @@ function End() {
     const {isGameOver, score,setGameOver, setScore, setLives, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, setScoreArr,longestStreak} = useContext(Context)
 
 
-    
-
-    
-
     function handleEndClick() {
         
         setScore(0)
@@ -63,21 +59,16 @@ function End() {
 
 
     const endText = score < 500 ? 
-    jerryCard : score >= 500 && score < 1000 ? meeseeksCard : score >= 1000 && score < 2000 ? summerCard : score >= 2000 && score < 3000 ? bethCard : pickleCard
+    jerryCard : score >= 500 && score < 1500 ? meeseeksCard : score >= 1500 && score < 5000 ? summerCard : score >= 5000 && score < 10000 ? bethCard : pickleCard
 
     return (
         <div>
         { isGameOver ?
         <div className="end-container">
-
         {endText}
-        <h1 className="final-score">Final Schmeckles: {score}</h1>
-
-        <h1 className="longest-streak">Longest streak: {longestStreak}</h1>
-
-
+        <h2 className="longest-streak">Longest streak: {longestStreak}</h2>
+        <h2 className="final-score">Final Schmeckles: {score}</h2>
         <div className="end-button-box"><button onClick={handleEndClick}>Replay</button></div>
-        
         </div> : ""
         }
         </div>

@@ -69,14 +69,13 @@ function Game() {
             <span className="lives-box">Lives: {lives}</span>    
         </div>
 
-        <img src={image} alt="character pic" className="character-image"/>
+        
+        {image ? <img src={image} alt="character pic" className="character-image"/> : ''}
         <div className="info-box">
-        <h2>{name}</h2>
-        <h3><span className="span-tag">Specie:</span><br></br> {species}</h3>
-        {type ? <h3><span className="span-tag">Type:</span><br></br> {type}</h3> : ''}
-        
-        <h3><span className="span-tag">Gender:</span><br></br> {gender}</h3>
-        
+       {name ? <h2>{name}</h2> : ''} 
+       {species ? <h3><span className="span-tag">Specie:</span><br></br> {species}</h3> : ''} 
+       {type ? <h3><span className="span-tag">Type:</span><br></br> {type}</h3> : ''}
+       {gender ? <h3><span className="span-tag">Gender:</span><br></br> {gender}</h3> : ''}
        {location.name ? <h3><span className="span-tag">Home location:</span><br></br> {location.name}</h3> : ''}
        {origin.location ? <h3><span className="span-tag">Last know location:</span><br></br> {origin.location}</h3> : ''}
         </div>

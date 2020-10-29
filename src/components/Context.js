@@ -38,7 +38,16 @@ function ContextProvider({children}) {
     const [scoreArr, setScoreArr] = useState([])
     const [longestStreak, setLongestStreak] = useState(0)
 
-    let randomId = Math.floor(Math.random() * 671)
+    function randomCharacter(min, max) {
+        min = Math.ceil(min)
+        max = Math.floor(max)
+        return Math.floor(Math.random() * (max - min + 1)) + min
+    }
+
+    let randomId = randomCharacter(1,671)
+
+
+    console.log(randomId)
 
     
 
@@ -172,15 +181,32 @@ function ContextProvider({children}) {
         
     } 
 
+    if (highStreak === 5) {
+            setScore(prevState => prevState + 500)
+    } else if (highStreak === 10) {
+        setScore(prevState => prevState + 1000)
+    } else if (highStreak === 15) {
+        setScore(prevState => prevState + 1500)
+    } else if (highStreak === 25) {
+        setScore(prevState => prevState + 2500)
+    }
+
+
     setLongestStreak(highStreak)
     }
 
     
     
     
+
     
 
-    console.log(scoreArr,longestStreak)
+    
+    
+    
+    
+
+    console.log(scoreArr,longestStreak, score)
 
 
 
