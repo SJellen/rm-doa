@@ -27,7 +27,7 @@
 }
 
 .start-image{
-
+    box-shadow: 1.5px 1.5px .5px 1px rgba(0, 0, 0, .15);
     width: 150px;
     height: auto;
     margin-left: 5rem;

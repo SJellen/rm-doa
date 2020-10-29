@@ -4,11 +4,7 @@ import {Context} from './Context'
 
 
 function Header() {
-
     const {rickImage, mortyImage} = useContext(Context)
-
-
-
 
     return (
         <div className="header">
@@ -19,7 +15,6 @@ function Header() {
 
     )
 }
-
 
 
 export default Header

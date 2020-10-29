@@ -19,11 +19,6 @@ function ContextProvider({children}) {
     const [summerImage, setSummerImage] = useState()
     const [bethImage, setBethImage] = useState()
     const [pickleImage, setPickleImage] = useState()
-
-
-   
-
-
     const [currentCharacter, setCurrentCharacter] = useState([])
     const [highScore, setHighScore] = useState(storageScores ? storageScores : 0)
     const [isGameOn, setIsGameOn] = useState(false)
@@ -34,7 +29,6 @@ function ContextProvider({children}) {
     const [lives, setLives] = useState(5)
     const [right, setRight] = useState(0)
     const [wrong, setWrong] = useState(0)
-
     const [scoreArr, setScoreArr] = useState([])
     const [longestStreak, setLongestStreak] = useState(0)
 

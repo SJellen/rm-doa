@@ -13,13 +13,13 @@ function Start() {
     
     return (
         <div>
-        { isStartPage ?
-        <div className="start-container">
-        <img src={poopyImage} alt="mr poopybutthole" className="start-image" />
-        <div className="wordballoon">Ooh wee, I sure would like to play a game. Ooh wee.</div>
-        <span className="button-box"><button onClick={handleClick}>Start</button></span>
-        </div> : ""
-        }
+            { isStartPage ?
+            <div className="start-container">
+                <img src={poopyImage} alt="mr poopybutthole" className="start-image" />
+                    <div className="wordballoon">Ooh wee, I sure would like to play a game. Ooh wee.</div>
+                <span className="button-box"><button onClick={handleClick}>Start</button></span>
+            </div> : ""
+            }
         </div>
     )
 }
