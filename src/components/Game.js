@@ -18,15 +18,17 @@ function Game() {
 
     function handleDead() {
         if (currentCharacter.status === "Dead") {
-            handleStreaks()
+            
             setScoreArr([...scoreArr, "r"])
             setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
+            handleStreaks()
             fetchCharacter()
         } else {
             setScoreArr([...scoreArr, "w"])
             setLives(prevState => prevState -1)
             setWrong(prevState => prevState + 1)
+            handleStreaks()
             if (lives <= 0) {
                 setGameOver(true)
                 setWrong(0)
@@ -41,11 +43,13 @@ function Game() {
             setScoreArr([...scoreArr, "r"])
             setScore(prevState => prevState + 100)
             setRight(prevState => prevState + 1)
+            handleStreaks()
             fetchCharacter()
         } else {
             setScoreArr([...scoreArr, "w"])
             setLives(prevState => prevState -1)
             setWrong(prevState => prevState + 1)
+            handleStreaks()
             if (lives <= 0) {
                 setGameOver(true)
                 setWrong(0)
