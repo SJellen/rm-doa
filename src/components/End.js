@@ -59,7 +59,7 @@ function End() {
 
 
     const endText = score < 500 ? 
-    jerryCard : score >= 500 && score < 1500 ? meeseeksCard : score >= 1500 && score < 5000 ? summerCard : score >= 5000 && score < 10000 ? bethCard : pickleCard
+    jerryCard : score >= 500 && score < 5000 ? meeseeksCard : score >= 5000 && score < 10000 ? summerCard : score >= 10000 && score < 50000 ? bethCard : pickleCard
 
     return (
         <div>

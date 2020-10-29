@@ -151,9 +151,6 @@ function ContextProvider({children}) {
     fetchSummer()
     fetchBeth()
     fetchPickle()
-    
-    
-    
      // eslint-disable-next-line react-hooks/exhaustive-deps
    },[highScore, longestStreak, score])
 
@@ -166,16 +163,15 @@ function ContextProvider({children}) {
     }
 
     function handleStreaks() {
-       let highStreak = 0
-       let currentStreak = 1
-       
-    for (let i=0; i< scoreArr.length; i++) {
+        let highStreak = 1
+        let currentStreak = 1
+        for (let i=0; i< scoreArr.length; i++) {
         if (scoreArr[i] === "r" && scoreArr[i+1] === "r") {
             currentStreak++ 
             if (currentStreak > highStreak)
             highStreak = currentStreak
         } else {
-            currentStreak = 1
+            currentStreak = 1   
         }  
     } 
 
@@ -191,7 +187,11 @@ function ContextProvider({children}) {
         setScore(prevState => prevState + 50000)
     }
 
+    if (!scoreArr.includes('r')) {
+        setLongestStreak(0)
+    } else {
     setLongestStreak(highStreak)
+    }
     
     
     }
