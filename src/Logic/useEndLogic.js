@@ -43,7 +43,8 @@ function useEndLogic() {
                           <span className="end-card-text">I'm sorry you feel you deserve an apology.</span>  
                         </div>
                         
-                        </div>    
+                        </div> 
+                                       
 
     const pickleCard = <div className="end-text-box">
                     <img src={pickleImage} className="end-card-image" alt="end card"/>
@@ -51,7 +52,11 @@ function useEndLogic() {
                     <span className="end-card-text">The reason anyone would do this is, if they could, which they can't, would be because they could, which they can't.</span>  
                     </div>
 
-                    </div>   
+                    </div>
+                    
+                    
+
+
 
     const endText = score < 1000 ? 
     jerryCard : score >= 1000 && score < 10000 ? meeseeksCard : score >= 10000 && score < 50000 ? summerCard : score >= 50000 && score < 150000 ? bethCard : pickleCard

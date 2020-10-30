@@ -5,6 +5,7 @@ import Header from './Header'
 import Start from './Start'
 import End from './End'
 import Footer from './Footer'
+import '../style/mediaQuery.css'
 
 
 

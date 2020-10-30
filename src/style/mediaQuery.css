@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1200px) {
+    .game-container {
+        width: 60%;
+    }
+    .end-container {
+        width: 60%;
+    }
+    .start-container {
+        width: 60%;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    
+  }
+
+  @media only screen and (max-width: 1000px) {
+      .header-image {
+          width: 75px;
+      }
+    .title {
+        font-size: 2rem;
+    } 
+    .start-container {
+        width: 75%;
+    }
+    .game-container {
+        width: 75%;
+    }
+    .end-container {
+        width: 75%;
+    }
+    .footer {
+        bottom: -5rem;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .title {
+        font-size: 1.75rem;
+    } 
+    .header-image {
+        width: 60px;
+        margin: 1rem 1rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 750px) {
+    .title {
+        font-size: 1.5rem;
+    } 
+    .wordballoon {
+        margin-left: 16rem;   
+    }
+    .start-image {
+          margin-left: 3rem;
+    }
+    .game-container {
+        width: 90%;
+    }
+    .start-container {
+        width: 90%;
+    }
+    .end-container {
+        width: 90%;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 675px) {
+      
+  }
