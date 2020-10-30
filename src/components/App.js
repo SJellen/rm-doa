@@ -4,6 +4,7 @@ import Game from './Game'
 import Header from './Header'
 import Start from './Start'
 import End from './End'
+import Footer from './Footer'
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <Game />
     <Start />
     <End />
+    <Footer />
     </div>
   );
 }

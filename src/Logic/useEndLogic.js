@@ -53,8 +53,8 @@ function useEndLogic() {
 
                     </div>   
 
-    const endText = score < 500 ? 
-    jerryCard : score >= 500 && score < 5000 ? meeseeksCard : score >= 5000 && score < 10000 ? summerCard : score >= 10000 && score < 50000 ? bethCard : pickleCard
+    const endText = score < 1000 ? 
+    jerryCard : score >= 1000 && score < 10000 ? meeseeksCard : score >= 10000 && score < 50000 ? summerCard : score >= 50000 && score < 150000 ? bethCard : pickleCard
 
 
 

@@ -169,16 +169,16 @@ function ContextProvider({children}) {
         }  
     } 
 
-    if (highStreak === 5) {
-            setScore(prevState => prevState + 5000)
-    } else if (highStreak === 10) {
-        setScore(prevState => prevState + 10000)
-    } else if (highStreak === 15) {
-        setScore(prevState => prevState + 15000)
-    } else if (highStreak === 25) {
-        setScore(prevState => prevState + 25000)
-    } else if (highStreak === 50) {
-        setScore(prevState => prevState + 50000)
+    if (highStreak >= 5 && highStreak < 10) {
+            setScore(prevState => Math.floor(prevState + (prevState * .10)))
+    } else if (highStreak >= 10 && highStreak < 15) {
+        setScore(prevState => Math.floor(prevState + (prevState * .15)))
+    } else if (highStreak >= 15 && highStreak < 25) {
+        setScore(prevState => Math.floor(prevState + (prevState * .25)))
+    } else if (highStreak >= 25 && highStreak < 50) {
+        setScore(prevState => Math.floor(prevState + (prevState * .40)))
+    } else if (highStreak >= 50) {
+        setScore(prevState => Math.floor(prevState + (prevState * .50)))
     }
 
     if (!scoreArr.includes('r')) {

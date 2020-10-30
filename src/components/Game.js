@@ -6,7 +6,7 @@ import useGameLogic from '../Logic/useGameLogic'
 function Game() {
 
     const {currentCharacter, highScore, isGameOn, fetchCharacter, isGameOver, score, lives, right, wrong,} = useContext(Context)
-    const {handleDead, handleAlive} = useGameLogic()
+    const {handleDead, handleAlive, commaNumbering} = useGameLogic()
     const {location, origin, image, name, species, type, gender } = currentCharacter
 
     if (currentCharacter.status === "unknown") {
@@ -37,8 +37,8 @@ function Game() {
                 <button className="button" onClick={handleAlive}>Alive</button>
             </div>
             <div className="game-footer">
-                <span className="high-score">High Schmeckles: {highScore}</span>
-                <span className="scoreboard">Schmeckles: {score}</span>
+                <span className="high-score">High Schmeckles: {commaNumbering(highScore)}</span>
+                <span className="scoreboard">Schmeckles: <br></br>{commaNumbering(score)}</span>
             </div>
         </div> : ""
         }

@@ -47,7 +47,14 @@ function useGameLogic() {
         }
     }
 
-    return {handleDead, handleAlive}
+
+
+
+    function commaNumbering(num) {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    }
+
+    return {handleDead, handleAlive, commaNumbering}
 
 }
 
