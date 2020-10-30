@@ -48,6 +48,11 @@ h3 {
     width: 10rem;
 }
 
+.game-lives {
+    font-weight: 700;
+    color: #a2d5f2;
+}
+
 .scoreboard {
     /* border: 1px solid red; */
     width: 10rem;
@@ -71,6 +76,18 @@ h3 {
     padding-top: 2rem;
     
 }
+
+.game-right {
+    font-weight: 700;
+    color: #a2d5f2;
+}
+
+.game-wrong {
+    font-weight: 700;
+    color: #a2d5f2;
+}
+
+
 .wrong {
     /* border: 1px solid red; */
     width: 10rem;
@@ -84,7 +101,7 @@ h3 {
     width: 40%;
     height: auto;
     
-    margin-top: -16rem;
+    margin-top: -17rem;
     text-align: left;
     padding-left: 2rem;
     margin-left: 2rem;
@@ -100,4 +117,14 @@ h3 {
 
 .button {
     margin: 5rem 1rem -2rem 1rem;
+}
+
+.game-high-score {
+    color: #a2d5f2;
+    font-weight: 700;
+}
+
+.game-scoreboard {
+    color: #a2d5f2;
+    font-weight: 700;
 }

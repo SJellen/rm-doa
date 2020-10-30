@@ -201,7 +201,7 @@ function ContextProvider({children}) {
     
     
 
-    console.log(scoreArr,longestStreak, score, currentCharacter.status)
+    console.log(scoreArr,longestStreak, score, currentCharacter.status, scoreArr)
 
 
 

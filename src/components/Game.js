@@ -19,9 +19,9 @@ function Game() {
         { isGameOn && !isGameOver ?
         <div className="game-container">
             <div className="game-header">
-                <span className="right">Right: {right}</span>
-                <span className="wrong">Wrong: {wrong}</span>
-                <span className="lives-box">Lives: {lives}</span>    
+                <span className="right">Right: <span className="game-right">{right}</span></span>
+                <span className="wrong">Wrong: <span className="game-wrong">{wrong}</span></span>
+                <span className="lives-box">Lives: <span className="game-lives">{lives}</span></span>    
             </div>
         {image ? <img src={image} alt="character pic" className="character-image"/> : ''}
             <div className="info-box">
@@ -37,8 +37,8 @@ function Game() {
                 <button className="button" onClick={handleAlive}>Alive</button>
             </div>
             <div className="game-footer">
-                <span className="high-score">High Schmeckles: {commaNumbering(highScore)}</span>
-                <span className="scoreboard">Schmeckles: <br></br>{commaNumbering(score)}</span>
+                <span className="high-score">High Schmeckles: <span className="game-high-score">{commaNumbering(highScore)}</span></span>
+                <span className="scoreboard">Schmeckles: <br></br><span className="game-scoreboard">{commaNumbering(score)}</span></span>
             </div>
         </div> : ""
         }

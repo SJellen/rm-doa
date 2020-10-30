@@ -16,8 +16,8 @@ function End() {
         { isGameOver ?
         <div className="end-container">
         {endText}
-        <h2 className="longest-streak">Longest streak: {longestStreak}</h2>
-        <h2 className="final-score">Final Schmeckles: {commaNumbering(score)}</h2>
+        <h2 className="longest-streak">Longest streak: <span className="end-longstreak">{longestStreak}</span></h2>
+        <h2 className="final-score">Final Schmeckles: <span className="end-score">{commaNumbering(score)}</span></h2>
         <div className="end-button-box"><button onClick={handleEndClick}>Replay</button></div>
         </div> : ""
         }

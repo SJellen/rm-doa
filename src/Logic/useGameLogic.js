@@ -17,7 +17,7 @@ function useGameLogic() {
             setLives(prevState => prevState -1)
             setWrong(prevState => prevState + 1)
             handleStreaks()
-            if (lives <= 0) {
+            if (lives <= 1) {
                 setGameOver(true)
                 setWrong(0)
                 setRight(0)
@@ -38,7 +38,7 @@ function useGameLogic() {
             setLives(prevState => prevState -1)
             setWrong(prevState => prevState + 1)
             handleStreaks()
-            if (lives <= 0) {
+            if (lives <= 1) {
                 setGameOver(true)
                 setWrong(0)
                 setRight(0)

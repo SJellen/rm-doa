@@ -13,7 +13,7 @@ function useEndLogic() {
         setScoreArr([])
     }
 
-    const jerryCard = <div>
+    const jerryCard = <div className="end-text-box">
                         <img src={jerryImage} className="end-card-image" alt="end card"/>
                         <div className="text-box">
                            <span className="end-card-text">Hey buddy, you did the best you could. Wanna Smore?</span> 
@@ -21,7 +21,7 @@ function useEndLogic() {
                         
                         </div>
 
-    const meeseeksCard = <div>
+    const meeseeksCard = <div className="end-text-box">
                         <img src={meeseeksImage} className="end-card-image" alt="end card"/>
                         <div className="text-box">
                            <span className="end-card-text">You gotta relax.</span> 
@@ -29,7 +29,7 @@ function useEndLogic() {
                         
                         </div>  
                         
-    const summerCard = <div>
+    const summerCard = <div className="end-text-box">
                         <img src={summerImage} className="end-card-image" alt="end card"/>
                         <div className="text-box">
                             <span className="end-card-text">We're all reeeaal impressed.</span>
@@ -37,7 +37,7 @@ function useEndLogic() {
                         
                         </div>                     
 
-    const bethCard = <div>
+    const bethCard = <div className="end-text-box">
                         <img src={bethImage} className="end-card-image" alt="end card"/>
                         <div className="text-box">
                           <span className="end-card-text">I'm sorry you feel you deserve an apology.</span>  
@@ -45,7 +45,7 @@ function useEndLogic() {
                         
                         </div>    
 
-    const pickleCard = <div>
+    const pickleCard = <div className="end-text-box">
                     <img src={pickleImage} className="end-card-image" alt="end card"/>
                     <div className="text-box">
                     <span className="end-card-text">The reason anyone would do this is, if they could, which they can't, would be because they could, which they can't.</span>  
