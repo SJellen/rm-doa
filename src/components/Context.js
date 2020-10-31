@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 let storageScores = localStorage.getItem('myData')
-
 storageScores = JSON.parse(storageScores)
-
 
 const Context = React.createContext()
 
@@ -39,11 +37,6 @@ function ContextProvider({children}) {
     }
 
     let randomId = randomCharacter(1,671)
-
-
-    
-
-    
 
     const fetchCharacter = async () => {
         await fetch(`https://rickandmortyapi.com/api/character/${randomId}`)
@@ -127,11 +120,6 @@ function ContextProvider({children}) {
         }
 
 
-        
-    
-
-
-
    useEffect(() => {
     fetchRick()
     fetchMorty()
@@ -190,29 +178,7 @@ function ContextProvider({children}) {
     
     }
 
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
-    // console.log(scoreArr,longestStreak, score, currentCharacter.status, scoreArr)
-
-
-
-
-
-
-
-   
-   
   
-   
 
     return (
         <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver, score, setScore, setIsGameRestart, isGameRestart, isStartPage, setIsStartPage, lives, setLives, right, setRight, wrong, setWrong, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, setHighScore, scoreArr, setScoreArr, handleStreaks, longestStreak}}>
@@ -220,15 +186,6 @@ function ContextProvider({children}) {
         </Context.Provider>
     )
 }
-
-
-
-
-
-
-
-
-
 
 
 

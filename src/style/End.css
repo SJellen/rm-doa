@@ -12,41 +12,28 @@
 }
 
 .end-card-image{
-    
     width: 150px;
     height: auto;
     margin-left: 2rem;
-    /* margin-top: 3rem;  */
     border-radius: 50%;
-    /* display: flex;
-    justify-content: left; */
 }
 
 .text-box {
-    /* display: flex;
-    justify-content: left;  */
-    /* border: 1px solid green;  */
     text-align: left;
     font-size: 1.25rem;
     margin-right: 2rem;
     margin-top: 2.5rem;
     max-width: 50%;
-    /* flex-direction: row; */
-    
 }
 
 .end-text-box {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
-   
     margin-top: 2.5rem;
 }
 
 .end-button-box {
     margin: 2rem auto -1rem auto;
-    /* border: 1px solid blue; */
-    
 }
 
 .final-score {

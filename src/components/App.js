@@ -7,12 +7,7 @@ import End from './End'
 import Footer from './Footer'
 import '../style/mediaQuery.css'
 
-
-
-
 function App() {
-
- 
   return (
     <div className="App">
     <Header />
@@ -21,7 +16,7 @@ function App() {
     <End />
     <Footer />
     </div>
-  );
+  )
 }
 
 export default App;

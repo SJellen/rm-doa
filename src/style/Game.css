@@ -12,7 +12,6 @@
 }
 
 .game-header {
-    /* border: 1px solid red; */
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -28,8 +27,6 @@ h3 {
 }
 
 .character-image{ 
-    /* margin-top: 3rem; */
-    /* margin-left: 50%; */
     display: flex;
     border-radius: 5px;
     width: 250px;
@@ -39,14 +36,12 @@ h3 {
 }
 
 .high-score {
-    /* border: 1px solid red; */
     padding-top: 4rem;
     width: 10rem;
     margin-left: 2rem;
 }
 
 .lives-box {
-    /* border: 1px solid red; */
     padding-top: 2rem;
     width: 10rem;
 }
@@ -57,7 +52,6 @@ h3 {
 }
 
 .scoreboard {
-    /* border: 1px solid red; */
     width: 10rem;
     padding-top: 4rem;
     margin-right: 2rem;
@@ -66,7 +60,6 @@ h3 {
 
 
 .game-footer {
-    /* border: 1px solid red; */
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -74,10 +67,8 @@ h3 {
 }
 
 .right {
-    /* border: 1px solid red; */
     width: 10rem;
     padding-top: 2rem;
-    
 }
 
 .game-right {
@@ -92,27 +83,19 @@ h3 {
 
 
 .wrong {
-    /* border: 1px solid red; */
     width: 10rem;
     padding-top: 2rem;
     
 }
 
 .info-box {
-    /* border: 1px solid black; */
-   
     width: 40%;
     height: auto;
-    
-    /* margin-top: -17rem; */
     text-align: left;
-    
     margin-left: 2rem;
-    
 }
 
 .mid-box {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -123,8 +106,6 @@ h3 {
 
 .choice-box{
     margin-top: 1rem;
-    /* border: 1px solid blue; */
-
 }
 
 .button {
