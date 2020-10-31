@@ -41,7 +41,7 @@ function ContextProvider({children}) {
     let randomId = randomCharacter(1,671)
 
 
-    console.log(randomId)
+    
 
     
 
@@ -201,7 +201,7 @@ function ContextProvider({children}) {
     
     
 
-    console.log(scoreArr,longestStreak, score, currentCharacter.status, scoreArr)
+    // console.log(scoreArr,longestStreak, score, currentCharacter.status, scoreArr)
 
 
 

@@ -5,23 +5,24 @@ import useGameLogic from '../Logic/useGameLogic'
 
 function Game() {
 
-    const {currentCharacter, highScore, isGameOn, fetchCharacter, isGameOver, score, lives, right, wrong,} = useContext(Context)
-    const {handleDead, handleAlive, commaNumbering} = useGameLogic()
+    const {currentCharacter, highScore, isGameOn, fetchCharacter, isGameOver, score, lives, right, wrong} = useContext(Context)
+    const {handleDead, handleAlive, commaNumbering, rightStyle, wrongStyle, livesStyle} = useGameLogic()
     const {location, origin, image, name, species, type, gender } = currentCharacter
 
     if (currentCharacter.status === "unknown") {
         fetchCharacter()
     }
 
+    
 
     return (
         <div>
         { isGameOn && !isGameOver ?
         <div className="game-container">
             <div className="game-header">
-                <span className="right">Right: <span className="game-right">{right}</span></span>
-                <span className="wrong">Wrong: <span className="game-wrong">{wrong}</span></span>
-                <span className="lives-box">Lives: <span className="game-lives">{lives}</span></span>    
+                <span className="right">Right: <span className="game-right" style={rightStyle}>{right}</span></span>
+                <span className="wrong">Wrong: <span className="game-wrong" style={wrongStyle}>{wrong}</span></span>
+                <span className="lives-box">Lives: <span className="game-lives" style={livesStyle}>{lives}</span></span>    
             </div>
             <div className="mid-box">
             <div className="info-box">

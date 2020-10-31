@@ -47,14 +47,21 @@ function useGameLogic() {
         }
     }
 
+    let lastAnswer = scoreArr[scoreArr.length - 1]
 
+    const rightStyle = {color: lastAnswer === "r" ? "green" : ''}
+    const wrongStyle = {color: lastAnswer === "w" ? "red" : ''}
+    const livesStyle = {color: lives === 1 ? 'red':
+                               lives === 2 ? 'orange' :
+                               lives === 3 ? 'yellow' : ''}
+    
 
 
     function commaNumbering(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     }
 
-    return {handleDead, handleAlive, commaNumbering}
+    return {handleDead, handleAlive, commaNumbering, lastAnswer, rightStyle, wrongStyle, livesStyle}
 
 }
 
