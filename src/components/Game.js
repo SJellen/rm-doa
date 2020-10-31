@@ -23,7 +23,7 @@ function Game() {
                 <span className="wrong">Wrong: <span className="game-wrong">{wrong}</span></span>
                 <span className="lives-box">Lives: <span className="game-lives">{lives}</span></span>    
             </div>
-        {image ? <img src={image} alt="character pic" className="character-image"/> : ''}
+            <div className="mid-box">
             <div className="info-box">
                 {name ? <h2>{name}</h2> : ''} 
                 {species ? <h3><span className="span-tag">Specie:</span><br></br> {species}</h3> : ''} 
@@ -31,7 +31,10 @@ function Game() {
                 {gender ? <h3><span className="span-tag">Gender:</span><br></br> {gender}</h3> : ''}
                 {location.name ? <h3><span className="span-tag">Home location:</span><br></br> {location.name}</h3> : ''}
                 {origin.location ? <h3><span className="span-tag">Last know location:</span><br></br> {origin.location}</h3> : ''}
+            </div> 
+            {image ? <img src={image} alt="character pic" className="character-image"/> : ''}
             </div>
+        
             <div className="choice-box">
                 <button className="button" onClick={handleDead}>Dead</button>
                 <button className="button" onClick={handleAlive}>Alive</button>

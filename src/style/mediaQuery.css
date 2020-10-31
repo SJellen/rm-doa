@@ -30,9 +30,7 @@
     .end-container {
         width: 75%;
     }
-    .footer {
-        bottom: -5rem;
-    }
+   
   }
 
   @media only screen and (max-width: 850px) {
@@ -66,9 +64,129 @@
         width: 90%;
     }
 
+    .character-image {
+        width: 225px;
+        height: 225px;
+    }
+
 
   }
 
   @media only screen and (max-width: 675px) {
-      
+    .title {
+        font-size: 1.25rem;
+    } 
+    .header-image {
+        width: 50px;
+        margin: 1rem 1rem;
+    }
+    .info-box {
+        margin-left: 0;
+    }
   }
+
+  @media only screen and (max-width: 600px) {
+    .title {
+        font-size: 1.25rem;
+        width: 50%;
+        line-height: 1.5;
+    }
+
+    .header-image {
+        width: 75px;
+        height: 75px;
+        margin: 1rem 1rem;
+    }
+    .wordballoon {
+        width: 40%;
+        margin-top: -7.5rem;
+    }
+    .game-container, .start-container, .end-container {
+        width: 95%;
+    }
+    .info-box > h3, .span-tag {
+        font-size: .95rem;
+    }
+    .mid-box {
+        max-width: 95%;
+    }
+    .character-image {
+        width: 200px;
+        height: 200px;
+    }
+    .mid-box {
+        justify-content: space-around;
+        margin: 2rem auto 0 auto;
+    }
+    .button {
+        margin: 2rem 1rem -2rem 1rem;
+    }
+   
+   
+   
+  }
+
+  @media only screen and (max-width: 500px) {
+    .wordballoon {
+        width: 40%;
+        margin-left: 13.5rem;
+    }
+    .start-image {
+        margin-left: 2rem;
+    }
+    .text-box {
+        margin-right: 0;
+
+    }
+    .character-image {
+        width: 150px;
+        height: 150px;
+        margin-top: 1.5rem;
+        margin-right: -1rem;
+    }
+    
+    .end-card-image {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+
+    .text-box {
+        margin-top: 1rem;
+    }
+    .start-image {
+        width: 100px;
+    }
+    .wordballoon {
+        width: 50%;
+        margin-top: -5rem;
+        margin-left: 10rem;
+        text-align: center;
+    }
+    
+  }
+
+  @media only screen and (max-width: 375px) {
+    
+  }
+
+
+  @media only screen and (max-height: 825px) {
+      .footer {
+          bottom: -15rem;
+      }
+  }
+
+  @media only screen and (max-height: 700px) {
+    .footer {
+        bottom: -17.5rem;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .footer {
+        bottom: -20rem;
+    }
+}
+
+  
