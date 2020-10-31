@@ -166,8 +166,59 @@
     
   }
 
-  @media only screen and (max-width: 375px) {
-    
+  @media only screen and (max-width: 360px) {
+    .header-image {
+        width: 50px;
+        height: 50px;
+        margin: .5rem .5rem;
+    }
+    .title {
+        font-size: 1.25rem;
+        width: 50%;
+        line-height: 1.5;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-left: .5rem;
+    }
+    .api-link {
+        width: 40px;
+        height: 40px;
+       
+    }
+    .start-image {
+       margin-left: 1rem;
+    }
+    .wordballoon {
+        width: 50%;
+        margin-top: -5rem;
+        margin-left: 9rem;
+        text-align: center;
+        
+    }
+    .character-image {
+        width: 125px;
+        height: 125px;
+        margin-top: 1.5rem;
+        margin-right: -1rem;
+    }
+    .mid-box {
+        justify-content: space-evenly;
+        
+    }
+  }
+
+
+  @media only screen and (max-width: 350px) {
+    .game-container, .start-container, .end-container {
+        width: 100%;
+        border-radius: none;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+      
   }
 
 
@@ -179,13 +230,13 @@
 
   @media only screen and (max-height: 700px) {
     .footer {
-        bottom: -17.5rem;
+        bottom: -20rem;
     }
 }
 
 @media only screen and (max-height: 600px) {
     .footer {
-        bottom: -20rem;
+        bottom: -25rem;
     }
 }
 
