@@ -12,6 +12,7 @@
 .header-image {
     border-radius: 100%;
     width: 100px;
+    height: 100px;
     margin: 1rem 2rem;
     box-shadow: 1.5px 1.5px .5px 1px rgba(0, 0, 0, .15);
 }
