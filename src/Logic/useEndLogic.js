@@ -54,16 +54,9 @@ function useEndLogic() {
 
                     </div>
                     
-                    
-
-
 
     const endText = score < 1000 ? 
     jerryCard : score >= 1000 && score < 10000 ? meeseeksCard : score >= 10000 && score < 50000 ? summerCard : score >= 50000 && score < 150000 ? bethCard : pickleCard
-
-
-
-
 
 
     return {handleEndClick, jerryCard, meeseeksCard, summerCard, bethCard, pickleCard, endText}

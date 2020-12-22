@@ -10,11 +10,11 @@ import '../style/mediaQuery.css'
 function App() {
   return (
     <div className="App">
-    <Header />
-    <Game />
-    <Start />
-    <End />
-    <Footer />
+      <Header />
+      <Game />
+      <Start />
+      <End />
+      <Footer />
     </div>
   )
 }
