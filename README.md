@@ -40,7 +40,7 @@ yarn run test
 * Website: ScottJellen.com
 * Twitter: [@ScottJellen](https://twitter.com/ScottJellen)
 * Github: [@SJellen](https://github.com/SJellen)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/scott-jellen-3251901b3\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/scott-jellen-3251901b3\/)
+* LinkedIn: [@https://www.linkedin.com/in/scottjellen/](https://www.linkedin.com/in/scottjellen/)
 
 ## Show your support
 
