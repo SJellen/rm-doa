@@ -2,10 +2,11 @@ import React, { useContext } from 'react'
 import '../style/Game.css'
 import {Context} from './Context'
 import useGameLogic from '../Logic/useGameLogic'
+import { motion} from 'framer-motion'
 
 function Game() {
 
-    const {currentCharacter, highScore, isGameOn, fetchCharacter, isGameOver, score, lives, right, wrong} = useContext(Context)
+    const {currentCharacter, highScore, isGameOn, fetchCharacter, isGameOver, score, lives, right, wrong, topLevelLoadingAnimation} = useContext(Context)
     const {handleDead, handleAlive, commaNumbering, rightStyle, wrongStyle, livesStyle} = useGameLogic()
     const {location, origin, image, name, species, type, gender } = currentCharacter
 
@@ -16,9 +17,14 @@ function Game() {
     
 
     return (
-        <div>
+        <div >
         { isGameOn && !isGameOver ?
-        <div className="game-container">
+        <motion.div 
+        initial="hidden"
+            animate="visible"
+            variants={topLevelLoadingAnimation}
+        
+        className="game-container">
             <div className="game-header">
                 <span className="right">Right: <span className="game-right" style={rightStyle}>{right}</span></span>
                 <span className="wrong">Wrong: <span className="game-wrong" style={wrongStyle}>{wrong}</span></span>
@@ -33,7 +39,10 @@ function Game() {
                 {location.name ? <h3><span className="span-tag">Home location:</span><br></br> {location.name}</h3> : ''}
                 {origin.location ? <h3><span className="span-tag">Last know location:</span><br></br> {origin.location}</h3> : ''}
             </div> 
-            {image ? <img src={image} alt="character pic" className="character-image"/> : ''}
+            {image ? <img
+                src={image} 
+                alt="character pic" 
+                className="character-image"/> : ''}
             </div>
         
             <div className="choice-box">
@@ -44,7 +53,7 @@ function Game() {
                 <span className="high-score">High Schmeckles: <span className="game-high-score">{commaNumbering(highScore)}</span></span>
                 <span className="scoreboard">Schmeckles: <br></br><span className="game-scoreboard">{commaNumbering(score)}</span></span>
             </div>
-        </div> : ""
+        </motion.div> : ""
         }
         </div>
     )

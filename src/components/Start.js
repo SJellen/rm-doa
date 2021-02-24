@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import '../style/Start.css'
 import {Context} from './Context'
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { motion} from 'framer-motion'
 
 function Start() {
 
