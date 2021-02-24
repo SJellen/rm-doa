@@ -178,10 +178,25 @@ function ContextProvider({children}) {
     
     }
 
+
+    const topLevelLoadingAnimation = {
+        hidden: {
+            scale: .75,
+            opacity: 0
+        },
+        visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+                delay: .4
+            }
+        }
+    }
+
   
 
     return (
-        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver, score, setScore, setIsGameRestart, isGameRestart, isStartPage, setIsStartPage, lives, setLives, right, setRight, wrong, setWrong, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, setHighScore, scoreArr, setScoreArr, handleStreaks, longestStreak}}>
+        <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver, score, setScore, setIsGameRestart, isGameRestart, isStartPage, setIsStartPage, lives, setLives, right, setRight, wrong, setWrong, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, setHighScore, scoreArr, setScoreArr, handleStreaks, longestStreak, topLevelLoadingAnimation}}>
             {children}
         </Context.Provider>
     )
