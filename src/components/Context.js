@@ -124,9 +124,9 @@ function ContextProvider({children}) {
     fetchRick()
     fetchMorty()
     fetchCharacter()
-    if (currentCharacter.status === "unknown") {
-        fetchCharacter()
-    }
+    // if (currentCharacter.status === "unknown") {
+    //     fetchCharacter()
+    // }
     fetchPoopy()
     fetchJerry()
     fetchMeeseeks()
