@@ -36,7 +36,7 @@ function ContextProvider({children}) {
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
 
-    let randomId = randomCharacter(1,671)
+    let randomId = randomCharacter(1,826)
 
     const fetchCharacter = async () => {
         await fetch(`https://rickandmortyapi.com/api/character/${randomId}`)
