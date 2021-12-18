@@ -119,7 +119,6 @@ function ContextProvider({children}) {
         .catch(error => console.log(error))
         }
 
-
    useEffect(() => {
     fetchRick()
     fetchMorty()
@@ -136,9 +135,6 @@ function ContextProvider({children}) {
      // eslint-disable-next-line react-hooks/exhaustive-deps
    },[highScore, longestStreak, score])
 
-
-
-  
     if (score > highScore) {
         setHighScore(score)
         localStorage.setItem('myData', score)
@@ -158,7 +154,7 @@ function ContextProvider({children}) {
     } 
 
     if (highStreak >= 5 && highStreak < 10) {
-            setScore(prevState => Math.floor(prevState + (prevState * .10)))
+        setScore(prevState => Math.floor(prevState + (prevState * .10)))
     } else if (highStreak >= 10 && highStreak < 15) {
         setScore(prevState => Math.floor(prevState + (prevState * .15)))
     } else if (highStreak >= 15 && highStreak < 25) {
@@ -172,12 +168,9 @@ function ContextProvider({children}) {
     if (!scoreArr.includes('r')) {
         setLongestStreak(0)
     } else {
-    setLongestStreak(highStreak)
+        setLongestStreak(highStreak)
     }
-    
-    
     }
-
 
     const topLevelLoadingAnimation = {
         hidden: {
@@ -193,15 +186,11 @@ function ContextProvider({children}) {
         }
     }
 
-  
-
     return (
         <Context.Provider value={{rickImage, mortyImage, currentCharacter, highScore, isGameOn, setIsGameOn,poopyImage, fetchCharacter, isGameOver, setGameOver, score, setScore, setIsGameRestart, isGameRestart, isStartPage, setIsStartPage, lives, setLives, right, setRight, wrong, setWrong, jerryImage, meeseeksImage, summerImage, bethImage, pickleImage, setHighScore, scoreArr, setScoreArr, handleStreaks, longestStreak, topLevelLoadingAnimation}}>
             {children}
         </Context.Provider>
     )
 }
-
-
 
 export {ContextProvider, Context}

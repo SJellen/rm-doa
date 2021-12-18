@@ -11,7 +11,6 @@ function End() {
     const {handleEndClick, endText} = useEndLogic()
     const {commaNumbering} = useGameLogic()
 
-
     return (
         <div>
         { isGameOver ?
@@ -19,7 +18,6 @@ function End() {
             initial="hidden"
             animate="visible"
             variants={topLevelLoadingAnimation}
-            
             className="end-container">
             {endText}
             <h2 className="longest-streak">Longest streak: <span className="end-longstreak">{longestStreak}</span></h2>
@@ -30,7 +28,5 @@ function End() {
         </div>
     )
 }
-
-
 
 export default End

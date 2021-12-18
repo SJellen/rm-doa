@@ -14,17 +14,14 @@ function Game() {
         fetchCharacter()
     }
 
-    
-
     return (
         <div >
         { isGameOn && !isGameOver ?
         <motion.div 
-        initial="hidden"
+            initial="hidden"
             animate="visible"
             variants={topLevelLoadingAnimation}
-        
-        className="game-container">
+            className="game-container">
             <div className="game-header">
                 <span className="right">Right: <span className="game-right" style={rightStyle}>{right}</span></span>
                 <span className="wrong">Wrong: <span className="game-wrong" style={wrongStyle}>{wrong}</span></span>
@@ -44,7 +41,6 @@ function Game() {
                 alt="character pic" 
                 className="character-image"/> : ''}
             </div>
-        
             <div className="choice-box">
                 <button className="button" onClick={handleDead}>Dead</button>
                 <button className="button" onClick={handleAlive}>Alive</button>
@@ -58,7 +54,5 @@ function Game() {
         </div>
     )
 }
-
-
 
 export default Game

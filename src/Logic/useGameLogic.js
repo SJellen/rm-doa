@@ -55,8 +55,6 @@ function useGameLogic() {
                                lives === 2 ? 'orange' :
                                lives === 3 ? 'yellow' : ''}
     
-
-
     function commaNumbering(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     }
@@ -64,6 +62,5 @@ function useGameLogic() {
     return {handleDead, handleAlive, commaNumbering, lastAnswer, rightStyle, wrongStyle, livesStyle}
 
 }
-
 
 export default useGameLogic
