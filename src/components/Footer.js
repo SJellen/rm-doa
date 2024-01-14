@@ -1,12 +1,13 @@
 import React from 'react'
 import '../style/Footer.css'
+import logo from '../logo.jpg'
 
 function Footer() {
 
     return (
             <div  className="footer"> 
                 <a href="https://scottjellen.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://s3.us-east-2.amazonaws.com/scottjellen.me.projectlist/sJellenLogo.jpg"
+                    <img src={logo}
                         alt="logo"
                         className="logo"
                         />
