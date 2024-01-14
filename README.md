@@ -41,7 +41,6 @@ yarn run test
 
 * Website: [ScottJellen.com](https://scottjellen.com/)
 * Github: [@SJellen](https://github.com/SJellen)
-* LinkedIn: [@https://www.linkedin.com/in/scottjellen/](https://www.linkedin.com/in/scottjellen/)
 
 ## Show your support
 
