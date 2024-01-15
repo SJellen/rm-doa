@@ -44,7 +44,7 @@ button {
     background-color: #00587a;
     color: #eeeeee;
     border-radius: 5px;
-    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .25);
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .05);
     text-transform: uppercase;
     font-weight: 700;
 }
