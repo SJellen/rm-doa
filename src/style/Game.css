@@ -1,117 +1,116 @@
-
 .game-container {
-    background-color: rgba(61, 62, 68, .95);
-    border-radius: 5px;
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    color: whitesmoke;
-    box-shadow: 1.5px 1.5px .5px 1.5px rgba(0, 0, 0, .15);
-    padding-bottom: 4rem;
+  background-color: rgba(61, 62, 68, 0.95);
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+  color: whitesmoke;
+  box-shadow: 1.5px 1.5px 0.5px 1.5px rgba(0, 0, 0, 0.15);
+  padding-bottom: 4rem;
 }
 
 .game-header {
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .span-tag {
-    color: gray;
-    font-size: 1rem;
+  color: gray;
+  font-size: 1rem;
 }
 h3 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-.character-image{ 
-    display: flex;
-    border-radius: 5px;
-    width: 250px;
-    height: 250px;
-    margin-top: 1rem;
-    box-shadow: 1.5px 1.5px .5px 1px rgba(0, 0, 0, .15);
+.character-image {
+  display: flex;
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  margin-top: 1rem;
+  box-shadow: 1.5px 1.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .high-score {
-    padding-top: 4rem;
-    width: 10rem;
-    margin-left: 2rem;
+  padding-top: 4rem;
+  width: 10rem;
+  margin-left: 2rem;
 }
 
 .lives-box {
-    padding-top: 2rem;
-    width: 10rem;
+  padding-top: 2rem;
+  width: 10rem;
 }
 
 .game-lives {
-    font-weight: 700;
-    color: #a2d5f2;
+  font-weight: 700;
+  color: #a2d5f2;
 }
 
 .scoreboard {
-    width: 10rem;
-    padding-top: 4rem;
-    margin-right: 2rem;
+  width: 10rem;
+  padding-top: 4rem;
+  margin-right: 2rem;
 }
 
 .game-footer {
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .right {
-    width: 10rem;
-    padding-top: 2rem;
+  width: 10rem;
+  padding-top: 2rem;
 }
 
 .game-right {
-    font-weight: 700;
-    color: #a2d5f2;
+  font-weight: 700;
+  color: #a2d5f2;
 }
 
 .game-wrong {
-    font-weight: 700;
-    color: #a2d5f2;
+  font-weight: 700;
+  color: #a2d5f2;
 }
 
 .wrong {
-    width: 10rem;
-    padding-top: 2rem;
+  width: 10rem;
+  padding-top: 2rem;
 }
 
 .info-box {
-    width: 40%;
-    height: auto;
-    text-align: left;
-    margin-left: 2rem;
+  width: 40%;
+  height: auto;
+  text-align: left;
+  margin-left: 2rem;
 }
 
 .mid-box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    max-width: 90%;
-    margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 2rem auto;
 }
 
-.choice-box{
-    margin-top: 1rem;
+.choice-box {
+  margin-top: 1rem;
 }
 
 .button {
-    margin: 5rem 1rem -2rem 1rem;
+  margin: 5rem 1rem -2rem 1rem;
 }
 
 .game-high-score {
-    color: #a2d5f2;
-    font-weight: 700;
+  color: #a2d5f2;
+  font-weight: 700;
 }
 
 .game-scoreboard {
-    color: #a2d5f2;
-    font-weight: 700;
+  color: #a2d5f2;
+  font-weight: 700;
 }

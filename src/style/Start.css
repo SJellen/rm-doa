@@ -1,56 +1,54 @@
-
 .start-container {
-    background-color: rgba(61, 62, 68, .95);
-    border-radius: 5px;
-    width: 50%;
-    height: auto;
-    margin: 4rem auto;
-    color: whitesmoke;
-    box-shadow: 1.5px 1.5px .5px 1.5px rgba(0, 0, 0, .15);
-    padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
+  background-color: rgba(61, 62, 68, 0.95);
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  margin: 4rem auto;
+  color: whitesmoke;
+  box-shadow: 1.5px 1.5px 0.5px 1.5px rgba(0, 0, 0, 0.15);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .wordballoon {
-    display: flex;
-    justify-content: right;
-    text-align: left;
-    font-size: 1.25rem;
-    margin-left: 18rem;
-    margin-top: -5rem;
-    width: 50%; 
+  display: flex;
+  justify-content: right;
+  text-align: left;
+  font-size: 1.25rem;
+  margin-left: 18rem;
+  margin-top: -5rem;
+  width: 50%;
 }
 
-.start-image{
-    box-shadow: 1.5px 1.5px .5px 1px rgba(0, 0, 0, .15);
-    width: 150px;
-    height: auto;
-    margin-left: 5rem;
-    margin-top: 3rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: left;
+.start-image {
+  box-shadow: 1.5px 1.5px 0.5px 1px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  height: auto;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: left;
 }
 
 .button-box {
-    margin: 5rem auto 0 auto;
+  margin: 5rem auto 0 auto;
 }
 
 button {
-    width: 100px;
-    padding: .5rem 0;
-    border: none;
-    background-color: #00587a;
-    color: #eeeeee;
-    border-radius: 5px;
-    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, .05);
-    text-transform: uppercase;
-    font-weight: 700;
+  width: 100px;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: #00587a;
+  color: #eeeeee;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: #0f3460;
+  cursor: pointer;
+  background-color: #0f3460;
 }
-

@@ -1,57 +1,57 @@
 .end-container {
-    background-color: rgba(61, 62, 68, .95);
-    border-radius: 5px;
-    width: 50%;
-    height: auto;
-    margin: 4rem auto;
-    color: whitesmoke;
-    box-shadow: 1.5px 1.5px .5px 1.5px rgba(0, 0, 0, .15);
-    padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
+  background-color: rgba(61, 62, 68, 0.95);
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  margin: 4rem auto;
+  color: whitesmoke;
+  box-shadow: 1.5px 1.5px 0.5px 1.5px rgba(0, 0, 0, 0.15);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.end-card-image{
-    width: 150px;
-    height: 150px;
-    margin-left: 2rem;
-    border-radius: 50%;
+.end-card-image {
+  width: 150px;
+  height: 150px;
+  margin-left: 2rem;
+  border-radius: 50%;
 }
 
 .text-box {
-    text-align: left;
-    font-size: 1.25rem;
-    margin-right: 2rem;
-    margin-top: 2.5rem;
-    max-width: 50%;
+  text-align: left;
+  font-size: 1.25rem;
+  margin-right: 2rem;
+  margin-top: 2.5rem;
+  max-width: 50%;
 }
 
 .end-text-box {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
 }
 
 .end-button-box {
-    margin: 2rem auto -1rem auto;
+  margin: 2rem auto -1rem auto;
 }
 
 .final-score {
-    margin-top: 0rem; 
-    font-weight: 500;
+  margin-top: 0rem;
+  font-weight: 500;
 }
 
 .longest-streak {
-    margin-top: 2.5rem; 
-    font-weight: 500;
+  margin-top: 2.5rem;
+  font-weight: 500;
 }
 
 .end-longstreak {
-    color: #a2d5f2;
-    font-weight: 700;
+  color: #a2d5f2;
+  font-weight: 700;
 }
 
 .end-score {
-    color: #a2d5f2;
-    font-weight: 700;
+  color: #a2d5f2;
+  font-weight: 700;
 }
