@@ -1,11 +1,11 @@
-import React from 'react'
-import '../style/App.css';
-import Game from './Game'
-import Header from './Header'
-import Start from './Start'
-import End from './End'
-import Footer from './Footer'
-import '../style/mediaQuery.css'
+import React from "react";
+import "../style/App.css";
+import Game from "./Game";
+import Header from "./Header";
+import Start from "./Start";
+import End from "./End";
+import Footer from "./Footer";
+import "../style/mediaQuery.css";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <End />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default App;

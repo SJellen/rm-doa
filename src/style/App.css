@@ -4,14 +4,11 @@ body {
 
 @font-face {
   font-family: rickMorty;
-  src: url(../get_schwifty.ttf)
+  src: url(../get_schwifty.ttf);
 }
 
 .App {
   text-align: center;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
-
-

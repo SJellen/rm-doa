@@ -1,225 +1,227 @@
 @media only screen and (max-width: 1200px) {
-    .game-container {
-        width: 60%;
-    }
-    .end-container {
-        width: 60%;
-    }
-    .start-container {
-        width: 60%;
-    }
-    .title {
-        font-size: 2.5rem;
-    } 
+  .game-container {
+    width: 60%;
   }
-
-  @media only screen and (max-width: 1000px) {
-      .header-image {
-          width: 75px;
-      }
-    .title {
-        font-size: 2rem;
-    } 
-    .start-container {
-        width: 75%;
-    }
-    .game-container {
-        width: 75%;
-    }
-    .end-container {
-        width: 75%;
-    } 
+  .end-container {
+    width: 60%;
   }
-
-  @media only screen and (max-width: 850px) {
-    .title {
-        font-size: 1.75rem;
-    } 
-    .header-image {
-        width: 60px;
-        margin: 1rem 1rem;
-    }
+  .start-container {
+    width: 60%;
   }
-
-  @media only screen and (max-width: 750px) {
-    .title {
-        font-size: 1.5rem;
-    } 
-    .wordballoon {
-        margin-left: 16rem;   
-    }
-    .start-image {
-          margin-left: 3rem;
-    }
-    .game-container {
-        width: 90%;
-    }
-    .start-container {
-        width: 90%;
-    }
-    .end-container {
-        width: 90%;
-    }
-
-    .character-image {
-        width: 225px;
-        height: 225px;
-    }
+  .title {
+    font-size: 2.5rem;
   }
-
-  @media only screen and (max-width: 675px) {
-    .title {
-        font-size: 1.25rem;
-    } 
-    .header-image {
-        width: 50px;
-        margin: 1rem 1rem;
-    }
-    .info-box {
-        margin-left: 0;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .title {
-        font-size: 1.25rem;
-        width: 50%;
-        line-height: 1.5;
-    }
-
-    .header-image {
-        width: 75px;
-        height: 75px;
-        margin: 1rem 1rem;
-    }
-    .wordballoon {
-        width: 40%;
-        margin-top: -7.5rem;
-    }
-    .game-container, .start-container, .end-container {
-        width: 95%;
-    }
-    .info-box > h3, .span-tag {
-        font-size: .95rem;
-    }
-    .mid-box {
-        max-width: 95%;
-    }
-    .character-image {
-        width: 200px;
-        height: 200px;
-    }
-    .mid-box {
-        justify-content: space-around;
-        margin: 2rem auto 0 auto;
-    }
-    .button {
-        margin: 2rem 1rem -2rem 1rem;
-    }
 }
 
-  @media only screen and (max-width: 500px) {
-    .wordballoon {
-        width: 40%;
-        margin-left: 13.5rem;
-    }
-    .start-image {
-        margin-left: 2rem;
-    }
-    .text-box {
-        margin-right: 0;
+@media only screen and (max-width: 1000px) {
+  .header-image {
+    width: 75px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .start-container {
+    width: 75%;
+  }
+  .game-container {
+    width: 75%;
+  }
+  .end-container {
+    width: 75%;
+  }
+}
 
-    }
-    .character-image {
-        width: 150px;
-        height: 150px;
-        margin-top: 1.5rem;
-        margin-right: -1rem;
-    }
-    
-    .end-card-image {
-        width: 100px;
-        height: 100px;
-        margin-left: 0;
-    }
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  .header-image {
+    width: 60px;
+    margin: 1rem 1rem;
+  }
+}
 
-    .text-box {
-        margin-top: 1rem;
-    }
-    .start-image {
-        width: 100px;
-    }
-    .wordballoon {
-        width: 50%;
-        margin-top: -5rem;
-        margin-left: 10rem;
-        text-align: center;
-    } 
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .wordballoon {
+    margin-left: 16rem;
+  }
+  .start-image {
+    margin-left: 3rem;
+  }
+  .game-container {
+    width: 90%;
+  }
+  .start-container {
+    width: 90%;
+  }
+  .end-container {
+    width: 90%;
   }
 
-  @media only screen and (max-width: 360px) {
-    .header-image {
-        width: 50px;
-        height: 50px;
-        margin: .5rem .5rem;
-    }
-    .title {
-        font-size: 1.25rem;
-        width: 50%;
-        line-height: 1.5;
-    }
-    .logo {
-        width: 50px;
-        height: 50px;
-        margin-left: .5rem;
-    }
-    .api-link {
-        width: 40px;
-        height: 40px;
-    }
-    .start-image {
-       margin-left: 1rem;
-    }
-    .wordballoon {
-        width: 50%;
-        margin-top: -5rem;
-        margin-left: 9rem;
-        text-align: center;
-    }
-    .character-image {
-        width: 125px;
-        height: 125px;
-        margin-top: 1.5rem;
-        margin-right: -1rem;
-    }
-    .mid-box {
-        justify-content: space-evenly;
-    }
+  .character-image {
+    width: 225px;
+    height: 225px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .title {
+    font-size: 1.25rem;
+  }
+  .header-image {
+    width: 50px;
+    margin: 1rem 1rem;
+  }
+  .info-box {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.25rem;
+    width: 50%;
+    line-height: 1.5;
   }
 
-  @media only screen and (max-width: 350px) {
-    .game-container, .start-container, .end-container {
-        width: 100%;
-        border-radius: none;
-    }
+  .header-image {
+    width: 75px;
+    height: 75px;
+    margin: 1rem 1rem;
+  }
+  .wordballoon {
+    width: 40%;
+    margin-top: -7.5rem;
+  }
+  .game-container,
+  .start-container,
+  .end-container {
+    width: 95%;
+  }
+  .info-box > h3,
+  .span-tag {
+    font-size: 0.95rem;
+  }
+  .mid-box {
+    max-width: 95%;
+  }
+  .character-image {
+    width: 200px;
+    height: 200px;
+  }
+  .mid-box {
+    justify-content: space-around;
+    margin: 2rem auto 0 auto;
+  }
+  .button {
+    margin: 2rem 1rem -2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .wordballoon {
+    width: 40%;
+    margin-left: 13.5rem;
+  }
+  .start-image {
+    margin-left: 2rem;
+  }
+  .text-box {
+    margin-right: 0;
+  }
+  .character-image {
+    width: 150px;
+    height: 150px;
+    margin-top: 1.5rem;
+    margin-right: -1rem;
   }
 
-  @media only screen and (max-height: 825px) {
-      .footer {
-          bottom: -15rem;
-      }
+  .end-card-image {
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
   }
 
-  @media only screen and (max-height: 700px) {
-    .footer {
-        bottom: -20rem;
-    }
+  .text-box {
+    margin-top: 1rem;
+  }
+  .start-image {
+    width: 100px;
+  }
+  .wordballoon {
+    width: 50%;
+    margin-top: -5rem;
+    margin-left: 10rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .header-image {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem 0.5rem;
+  }
+  .title {
+    font-size: 1.25rem;
+    width: 50%;
+    line-height: 1.5;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5rem;
+  }
+  .api-link {
+    width: 40px;
+    height: 40px;
+  }
+  .start-image {
+    margin-left: 1rem;
+  }
+  .wordballoon {
+    width: 50%;
+    margin-top: -5rem;
+    margin-left: 9rem;
+    text-align: center;
+  }
+  .character-image {
+    width: 125px;
+    height: 125px;
+    margin-top: 1.5rem;
+    margin-right: -1rem;
+  }
+  .mid-box {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .game-container,
+  .start-container,
+  .end-container {
+    width: 100%;
+    border-radius: none;
+  }
+}
+
+@media only screen and (max-height: 825px) {
+  .footer {
+    bottom: -15rem;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .footer {
+    bottom: -20rem;
+  }
 }
 
 @media only screen and (max-height: 600px) {
-    .footer {
-        bottom: -25rem;
-    }
+  .footer {
+    bottom: -25rem;
+  }
 }
-
-  
